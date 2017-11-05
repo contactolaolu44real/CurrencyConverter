@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:padding="15dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#ff8899"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    tools:context="com.example.olaolu.currencyconverter.ConversionBase">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perform your currency conversions"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#fff"/>
+    <View
+        android:layout_marginTop="5dp"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:text="Base Currency(Crypto)"
+            android:gravity="left|center_vertical"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+        <Spinner
+            android:id="@+id/baseSpinner"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:text="To Currency"
+            android:gravity="left|center_vertical"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+        <Spinner
+            android:id="@+id/targetSpinner"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/conversionAmount"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:hint="Enter conversion figure"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/conversionDisplay"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"/>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    <Button
+        android:id="@+id/btnCalculate"
+        android:background="@drawable/bt_style"
+        android:textStyle="bold"
+        android:text="CALCULATE"
+        android:textSize="18sp"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"/>
+
+</LinearLayout>
+</ScrollView>
